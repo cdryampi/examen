@@ -1,0 +1,22 @@
+{
+  "name": "clasificar-alumnos",
+  "version": "1.0.0",
+  "description": "Ejercicio para clasificar alumnos según su nota media",
+  "main": "clasificar.js",
+  "type": "module",
+  "scripts": {
+    "start": "node clasificar.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alumnos",
+    "clasificacion",
+    "notas",
+    "javascript"
+  ],
+  "author": "En el examen pon tu nombre aquí",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

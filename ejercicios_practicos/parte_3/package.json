@@ -1,0 +1,22 @@
+{
+    "name": "apis-platzi",
+    "version": "1.0.0",
+    "description": "Ejercicio para listar los endpoints de la API de Platzi",
+    "main": "api.js",
+    "type": "module",
+    "scripts": {
+        "start": "node api.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "api",
+        "platzi",
+        "endpoints",
+        "javascript"
+    ],
+    "author": "En el examen pon tu nombre aquí",
+    "license": "ISC",
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}
