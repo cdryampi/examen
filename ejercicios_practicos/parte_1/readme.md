@@ -1,0 +1,2 @@
+# Resumen del ejercicio práctico.
+Solo hay que añadir un `EventListener`, cambiar el color de fondo del `body` al hacer click en el botón y actualizar el `span` según el tema. En este caso, se ha realizado una función que hace cambios más produndos como el `header`, `button` y el `body`.
