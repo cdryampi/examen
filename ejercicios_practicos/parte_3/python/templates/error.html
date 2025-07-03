@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FastAPI + Tailwind CDN | error</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <header>
+        <nav class="bg-gray-800 w-full p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="/" class="text-white text-2xl font-bold">Platzi API</a>
+                <div class="flex space-x-4">
+                    <a href="/users" class="text-gray-300 hover:text-white">Usuarios</a>
+                    <a href="/categories" class="text-gray-300 hover:text-white">Categorías</a>
+                    <a href="/products" class="text-gray-300 hover:text-white">Productos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="flex-grow flex flex-col items-center justify-center">
+        <div class="text-center">
+            <p class="text-6xl md:text-8xl font-bold mb-6 uppercase">Error</p>
+            <p class="text-xl md:text-2xl mb-4">{{ message }}</p>
+            <p class="text-lg mb-4 text-gray-400">Por favor, inténtalo de nuevo más tarde.</p>
+            <a href="/" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 inline-block">
+                Volver al inicio
+            </a>
+        </div>
+        
+        <div class="image-container mt-12 flex justify-center">
+            <img src="/static/encouraging.png" alt="Imagen de ánimo" class="w-48 h-64 rounded-lg shadow-lg object-cover">
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 w-full p-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p class="text-white">Cosas de Inkor hechas con mucho amor.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FastAPI + Tailwind CDN | users</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <header>
+        <nav class="bg-gray-800 w-full p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="/" class="text-white text-2xl font-bold">Platzi API</a>
+                <div class="flex space-x-4">
+                    <a href="/users" class="text-gray-300 hover:text-white">Usuarios</a>
+                    <a href="/categories" class="text-gray-300 hover:text-white">Categorías</a>
+                    <a href="/products" class="text-gray-300 hover:text-white">Productos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="flex-grow">
+        <div class="container mx-auto text-center p-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 uppercase">
+                Usuarios de Platzi
+            </h1>
+        </div>
+        
+        <div class="container mx-auto px-8 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {% for user in users %}
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center justify-center mb-4">
+                        {% if not user.avatar or user.avatar == "image.exam" or "https" not in user.avatar %}
+                            <img src="/static/inkor_chibi.png" alt="Avatar de {{ user.name }}" class="w-24 h-24 rounded-full shadow-lg object-cover">
+                        {% else %}
+                            <img src="{{ user.avatar }}" alt="{{ user.name }}" class="w-24 h-24 rounded-full shadow-lg object-cover">
+                        {% endif %}
+                    </div>
+                    <h2 class="text-xl font-bold mb-4 text-center">{{ user.name }}</h2>
+                    <p class="text-gray-400 mb-2"><span class="font-semibold">Email:</span> {{ user.email }}</p>
+                    <p class="text-gray-400 mb-2"><span class="font-semibold">Fecha de registro:</span> {{ user.created_at }}</p>
+                    <p class="text-gray-400"><span class="font-semibold">ID:</span> {{ user.id }}</p>
+                </div>
+                {% endfor %}
+                
+                {% if not users %}
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg col-span-full">
+                    <h2 class="text-2xl font-bold mb-4 text-center">No hay usuarios registrados</h2>
+                    <p class="text-gray-400 text-center">Por favor, añade algunos usuarios.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 w-full p-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p class="text-white">Cosas de Inkor hechas con mucho amor.</p>
+        </div>
+    </footer>
+</body>
+</html>

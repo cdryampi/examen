@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FastAPI + Tailwind CDN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <header>
+        <nav class="bg-gray-800 w-full p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="/" class="text-white text-2xl font-bold">Platzi API</a>
+                <div class="flex space-x-4">
+                    <a href="/users" class="text-gray-300 hover:text-white">Usuarios</a>
+                    <a href="/categories" class="text-gray-300 hover:text-white">Categorías</a>
+                    <a href="/products" class="text-gray-300 hover:text-white">Productos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="flex-grow flex flex-col items-center justify-center">
+        <div class="container mx-auto text-center p-8">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 uppercase">
+                Ejercicio 3
+            </h1>
+            <p class="text-gray-400 mb-2 text-lg">
+                Platzi API + Requests + FastAPI + Tailwind CDN
+            </p>
+            <p class="text-gray-400 mb-8">
+                Para ver los resultados de la API puedes hacer clic en los botones de abajo.
+            </p>
+        </div>
+        
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+            <a href="/users" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-center block">
+                Usuarios
+            </a>
+            <a href="/categories" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-center block">
+                Categorías
+            </a>
+            <a href="/products" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-center block">
+                Productos
+            </a>
+        </div>
+        
+        <div class="image-container mt-12 flex justify-center">
+            <img src="/static/inkor_chibi.png" alt="Inkor Logo" class="w-48 h-64 rounded-lg shadow-lg object-cover">
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 w-full p-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p class="text-white">Cosas de Inkor hechas con mucho amor.</p>
+        </div>
+    </footer>
+</body>
+</html>

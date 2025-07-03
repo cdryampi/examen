@@ -134,7 +134,16 @@ class PlatziAPI:
             response.raise_for_status()
             print(f"Error al obtener usuarios: {response.status_code} - {response.text}")
 
-
+    def get_list_users(self)->list:
+        """Obtiene todos los usuarios de la API."""
+        return self.users
+    def get_list_products(self)->list:
+        """Obtiene todos los productos de la API."""
+        return self.products
+    def get_list_categories(self)->list:
+        """Obtiene todas las categorías de la API."""
+        return self.categories
+    
     def print_data(self):
         """Imprime los datos obtenidos de la API."""
 
