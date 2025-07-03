@@ -9,6 +9,11 @@ El examen práctico  consiste en resolver 3 ejercicios de programación. Cada ej
 
 **nota: Cambia pon tu nombre en el autor del código.**
 **cambios: puedes utilizar el bot de MotivBot para hacer cambios mínimos en el código.**
+---
 ## URL del MotivBot:
 [MotivBot](https://inkortask.yampi.eu/).
+
 Creas una tarea nueva, poniendo como descripión el código y actualizas el navegador. Entras en la tarea creada **importante: Crea la tarea con la fecha del examen para que no utilices los filtros**. Solo tienes que pedirle al bot que te ayude a resolver los ejercicios. Puedes pedirle ayuda en cualquier momento, pero recuerda que el bot no puede hacer todo el trabajo por ti. Debes entender el código y ser capaz de explicarlo.
+---
+**Suerte con el examen!**
+![MotivBot](images/default.png)
