@@ -31,3 +31,6 @@ Al final tenemos una función `main` que ejecuta todo el proceso de:
 
 **Nota**: Asegúrate de instalar las dependencias con `pip install -r requirements.txt`
 **MotivBot**: Puedes utilizarlo para realizar modificaciones en el código y pedirle explicaciones sobre el mismo.
+
+## Modo web para poder ver los resultados de la API de Platzi:
+- Puedes iniciarla con el comando `uvicorn server:app --reload` y acceder a la documentación interactiva en `http://localhost:8000/`.
